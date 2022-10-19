@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>theme_background</key>
+        <value>#000000</value>
+    </entry>
+    <entry>
+        <key>splash_background</key>
+        <value>#ffffff</value>
+    </entry>
+    <entry>
+        <key>splash_message_caps</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>splash_message</key>
+        <value>지금은 사용하실수 없습니다.</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->

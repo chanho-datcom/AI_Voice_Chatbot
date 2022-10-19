@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".newMainActivity">
+
+    <TextView
+        android:id="@+id/newMainActivity_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Roda."
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newMainActivity_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newMainActivity_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newMainActivtiy_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="password"
+        android:layout_below="@+id/newMainActivity_id"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginTop="100dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/newMainActivity_Login"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newMainActivtiy_password"
+        android:text="Sign in"
+        android:textSize="13dp"
+        android:drawableLeft="@drawable/baseline_login_black_24dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/newMainActivity_Google"
+        android:layout_below="@+id/newMainActivity_Login"
+        android:layout_centerHorizontal="true"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <Button
+        android:id="@+id/newMainActivity_Facebook"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newMainActivity_Google"
+        android:text="Sign in with Facebook"
+        android:textSize="13dp"
+        android:drawableLeft="@drawable/facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/newMainActivity_Email"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newMainActivity_Facebook"
+        android:text="Sign in with E-mail"
+        android:textSize="13dp"
+        android:drawableLeft="@drawable/baseline_mail_outline_black_24dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"/>
+
+
+
+
+
+</RelativeLayout>

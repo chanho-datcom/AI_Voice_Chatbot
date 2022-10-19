@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/joinAtivitye_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/joinAtivitye_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Roda."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/joinAtivitye_toolbar"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/joinAtivity_String"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with Email"
+        android:textColor="@color/black"
+        android:layout_below="@+id/joinAtivitye_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/joinAtivity_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joinAtivity_String"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/joinAtivity_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joinAtivity_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/joinAtivity_Sign_in"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:text="Sign in"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/joinAtivity_password"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/joinAtivity_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joinAtivity_Sign_in"
+        android:text="Already have an account?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joinAtivity_text1"
+        android:text="Login here"
+        android:linksClickable="true"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_Record">
+    <fragment
+        android:id="@+id/fragment_Record"
+        android:name="com.example.roda.fragment_Record"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" >
+        <action
+            android:id="@+id/action_fragment_Record_to_fragment_audio"
+            app:destination="@id/fragment_audio"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/silde_out"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_audio"
+        android:name="com.example.roda.fragment_audio"
+        android:label="fragment_audio"
+        tools:layout="@layout/fragment_audio" />
+</navigation>

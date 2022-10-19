@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Roda."
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/mainActivity_chat"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:text="Start in Roda"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/mainActivity_voice"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainActivity_chat"
+        android:text="Voice Load"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/mainActivity_voiceRecode"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainActivity_voice"
+        android:text="Voice Recording"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/mainActivity_myProfile"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainActivity_voiceRecode"
+        android:text="My Profile"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/white"/>
+
+
+    <Button
+        android:id="@+id/mainActivity_setting"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:text="Setting"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainActivity_myProfile"
+        />
+
+    <Button
+        android:id="@+id/mainActivity_logout"
+        android:layout_width="319dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:text="Logout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mainActivity_setting"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/mainActivity_bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/blue"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/bottom_navigation_main">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
+
